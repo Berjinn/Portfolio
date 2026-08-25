@@ -1,0 +1,13 @@
+@page
+@model Portfolio.Pages.IndexModel
+@{
+    ViewData["Title"] = $"{Model.Profile.Name} | Portfolio";
+    ViewData["Description"] = Model.Profile.Headline;
+}
+
+<main>
+    <partial name="_Hero" model="Model.Profile" />
+    <partial name="_About" model="Model.Profile" />
+    <partial name="_Experience" model="Model.Profile" />
+    <partial name="_Projects" model="Model.Profile" />
+</main>

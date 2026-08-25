@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f2ec" /><meta name="description" content="@ViewData["Description"]" />
+    <title>@ViewData["Title"]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head><body>
+    <header class="site-header"><a class="brand" href="/" aria-label="Portfolio home">BJB<span>.</span></a><nav aria-label="Main navigation"><a href="/#about">About</a><a href="/#experience">Experience</a><a href="/#projects">Projects</a></nav><a class="header-contact" href="https://wa.me/916379375479" target="_blank" rel="noreferrer">Let's talk <span aria-hidden="true">↗</span></a></header>
+    @RenderBody()
+    <footer class="site-footer container"><p>Have a project in mind?</p><a href="mailto:berjinberjin90@gmail.com">Let's work together <span aria-hidden="true">↗</span></a><div class="footer-bottom"><span>© @DateTime.UtcNow.Year Berjin John Benadict</span><span class="mono">Designed &amp; built with ASP.NET Core</span></div></footer>
+</body></html>

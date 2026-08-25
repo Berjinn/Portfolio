@@ -1,0 +1,9 @@
+@Portfolio_HostAddress = https://localhost:7026
+
+GET {{Portfolio_HostAddress}}/api/portfolio
+Accept: application/json
+
+###
+
+GET {{Portfolio_HostAddress}}/api/portfolio/projects
+Accept: application/json
