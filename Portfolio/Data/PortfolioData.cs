@@ -9,9 +9,9 @@ public static class PortfolioData
 {
     public static readonly PortfolioProfile Profile = new(
         Name: "Berjin John Benadict",
-        Headline: "Software Developer | Building scalable .NET solutions",
+        Headline: "Full-Stack .NET Developer | Building scalable web solutions",
         Location: "Kanyakumari, Tamil Nadu, India · 629003",
-        Summary: "Software Developer with 2+ years of backend experience using ASP.NET Core, Web API, and SQL Server across banking and enterprise domains. Focused on scalable RESTful APIs, database performance, clean architecture, and reliable production systems.",
+        Summary: "Full-stack .NET developer with 2+ years of experience building web applications with ASP.NET Core MVC, Blazor, Web API, and SQL Server. I create reliable user experiences, scalable APIs, and maintainable database solutions across banking and enterprise domains.",
         Contact: new ContactDetails(
             Email: "berjinberjin90@gmail.com",
             LinkedInUrl: "https://www.linkedin.com/in/berjin-john-benadict-560219225",
@@ -19,8 +19,8 @@ public static class PortfolioData
             WebsiteUrl: null),
         Skills:
         [
-            new SkillGroup("Microsoft", [".NET Framework", ".NET Core", "ASP.NET MVC", "ASP.NET Web API"]),
-            new SkillGroup("Frontend", ["HTML5", "CSS3", "JavaScript", "jQuery", "TypeScript", "Angular 12+"]),
+            new SkillGroup("Microsoft", [".NET Framework", ".NET Core", "ASP.NET Core MVC", "Blazor", "ASP.NET Web API"]),
+            new SkillGroup("Frontend", ["HTML5", "CSS3", "JavaScript", "jQuery", "TypeScript", "Blazor", "Angular 12+"]),
             new SkillGroup("Backend", ["C#", "RESTful APIs", "API Integration", "Dependency Injection", "ADO.NET"]),
             new SkillGroup("Database", ["SQL Server", "SSMS", "Entity Framework", "LINQ", "Stored Procedures"]),
             new SkillGroup("Tools & Practice", ["Git", "Azure DevOps", "TFS", "IIS", "Agile/Scrum", "Debugging"])
