@@ -1,10 +1,20 @@
-using Portfolio.Data;
 using Portfolio.Models;
+using Portfolio.Repositories;
 
 namespace Portfolio.Services;
 
-/// <summary>Central portfolio-content service. It can later use a database without changing the UI or API.</summary>
 public sealed class PortfolioService : IPortfolioService
 {
-    public PortfolioProfile GetProfile() => PortfolioData.Profile;
+    private readonly IPortfolioRepository _portfolioRepository;
+
+    public PortfolioService(IPortfolioRepository portfolioRepository)
+    {
+        _portfolioRepository = portfolioRepository;
+    }
+
+    public Task<PortfolioProfile> GetProfileAsync(
+        CancellationToken cancellationToken = default)
+    {
+        return _portfolioRepository.GetProfileAsync(cancellationToken);
+    }
 }

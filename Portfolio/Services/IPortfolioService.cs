@@ -4,5 +4,5 @@ namespace Portfolio.Services;
 
 public interface IPortfolioService
 {
-    PortfolioProfile GetProfile();
+    Task<PortfolioProfile> GetProfileAsync(CancellationToken cancellationToken = default);
 }
