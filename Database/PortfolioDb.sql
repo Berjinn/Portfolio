@@ -85,12 +85,12 @@ GO
 INSERT dbo.Profile (Name, Headline, Location, Summary, Email, LinkedInUrl, GitHubUrl)
 VALUES (N'Berjin John Benadict', N'Full-Stack .NET Developer | Building scalable web solutions',
 N'Kanyakumari, Tamil Nadu, India · 629003',
-N'Full-stack .NET developer with 2+ years of experience building web applications with ASP.NET Core MVC, Blazor, Web API, and SQL Server. I create reliable user experiences, scalable APIs, and maintainable database solutions across banking and enterprise domains.',
+N'Full-stack .NET developer with 2+ years of experience building web applications with ASP.NET Core MVC, Razor, Web API, and SQL Server. I create reliable user experiences, scalable APIs, and maintainable database solutions across banking and enterprise domains.',
 N'berjinberjin90@gmail.com', N'https://www.linkedin.com/in/berjin-john-benadict-560219225', N'https://github.com/Berjinn/Berjin-Portfolio');
 
 INSERT dbo.Skill (Category, Item, DisplayOrder) VALUES
-(N'Microsoft', N'.NET Framework', 1), (N'Microsoft', N'.NET Core', 2), (N'Microsoft', N'ASP.NET Core MVC', 3), (N'Microsoft', N'Blazor', 4), (N'Microsoft', N'ASP.NET Web API', 5),
-(N'Frontend', N'HTML5', 10), (N'Frontend', N'CSS3', 11), (N'Frontend', N'JavaScript', 12), (N'Frontend', N'jQuery', 13), (N'Frontend', N'TypeScript', 14), (N'Frontend', N'Blazor', 15), (N'Frontend', N'Angular 12+', 16),
+(N'Microsoft', N'.NET Framework', 1), (N'Microsoft', N'.NET Core', 2), (N'Microsoft', N'ASP.NET Core MVC', 3), (N'Microsoft', N'Razor', 4), (N'Microsoft', N'ASP.NET Web API', 5),
+(N'Frontend', N'HTML5', 10), (N'Frontend', N'CSS3', 11), (N'Frontend', N'JavaScript', 12), (N'Frontend', N'jQuery', 13), (N'Frontend', N'TypeScript', 14), (N'Frontend', N'Razor', 15), (N'Frontend', N'Angular 12+', 16),
 (N'Backend', N'C#', 20), (N'Backend', N'RESTful APIs', 21), (N'Backend', N'API Integration', 22), (N'Backend', N'Dependency Injection', 23), (N'Backend', N'ADO.NET', 24),
 (N'Database', N'SQL Server', 30), (N'Database', N'SSMS', 31), (N'Database', N'Entity Framework', 32), (N'Database', N'LINQ', 33), (N'Database', N'Stored Procedures', 34),
 (N'Tools & Practice', N'Git', 40), (N'Tools & Practice', N'Azure DevOps', 41), (N'Tools & Practice', N'TFS', 42), (N'Tools & Practice', N'IIS', 43), (N'Tools & Practice', N'Agile/Scrum', 44), (N'Tools & Practice', N'Debugging', 45);
