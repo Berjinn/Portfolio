@@ -1,2 +1,10 @@
 @model PortfolioProfile
-<section id="experience" class="experience container" aria-labelledby="experience-title"><div class="section-heading"><p class="section-label">03 / Experience</p><h2 id="experience-title">Where I've made an impact.</h2></div><div class="experience-list">@foreach (var experience in Model.Experience) { <article class="experience-card"><div class="experience-meta mono"><span>@experience.Period</span><span>@experience.Location</span></div><div><h3>@experience.Role</h3><p class="experience-company">@experience.Company</p></div><div class="experience-copy"><p>@experience.Description</p><ul class="experience-highlights">@foreach (var highlight in experience.Highlights) { <li>@highlight</li> }</ul></div></article> }</div></section>
+<section id="experience" class="experience container" aria-labelledby="experience-title"><div class="section-heading"><p class="section-label">03 / Experience</p><h2 id="experience-title">Where  I've  Built  &  Contributed</h2></div><div class="experience-list">@foreach (var experience in Model.Experience) {
+    <article class="experience-card"><div class="experience-meta mono"><span>@experience.Period</span><span>@experience.Location</span></div><div><h3>@experience.Role</h3><p class="experience-company">@experience.Company</p></div><div class="experience-copy"><p>@experience.Description</p><ul class="experience-highlights">@foreach (var highlight in experience.Highlights) {
+        <li>@highlight</li>
+    }
+</ul></div></article>
+}
+</div></section>
+
+

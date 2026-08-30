@@ -15,17 +15,33 @@ public sealed class PortfolioController : ControllerBase
         _portfolioService = portfolioService;
     }
 
-    /// <summary>
-    /// Returns the full portfolio profile, including skills, work experience, projects, and education.
-    /// </summary>
     [HttpGet]
     [ProducesResponseType<PortfolioProfile>(StatusCodes.Status200OK)]
-    public ActionResult<PortfolioProfile> Get() => Ok(_portfolioService.GetProfile());
+    public async Task<ActionResult<PortfolioProfile>> Get(
+       CancellationToken cancellationToken)
+    {
+        var profile =
+            await _portfolioService.GetProfileAsync(cancellationToken);
 
-    /// <summary>
-    /// Returns the portfolio projects for project-focused pages or widgets.
-    /// </summary>
-    [HttpGet("projects")]
-    [ProducesResponseType<IReadOnlyList<Project>>(StatusCodes.Status200OK)]
-    public ActionResult<IReadOnlyList<Project>> GetProjects() => Ok(_portfolioService.GetProfile().Projects);
+        return Ok(profile);
+    }
 }
+
+
+
+/// <summary>
+/// Returns the full portfolio profile, including skills, work experience, projects, and education.
+/// </summary>
+//[HttpGet]
+//[ProducesResponseType<PortfolioProfile>(StatusCodes.Status200OK)]
+//public async Task<ActionResult<PortfolioProfile>> Get(CancellationToken cancellationToken) =>
+//    Ok(await _portfolioService.GetProfileAsync(cancellationToken));
+
+/// <summary>
+/// Returns the portfolio projects for project-focused pages or widgets.
+/// </summary>
+//[HttpGet("projects")]
+//[ProducesResponseType<IReadOnlyList<Project>>(StatusCodes.Status200OK)]
+//public async Task<ActionResult<IReadOnlyList<Project>>> GetProjects(CancellationToken cancellationToken) =>
+//    Ok((await _portfolioService.GetProfileAsync(cancellationToken)).Projects);
+//}

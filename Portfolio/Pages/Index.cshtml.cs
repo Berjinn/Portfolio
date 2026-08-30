@@ -15,8 +15,8 @@ public sealed class IndexModel : PageModel
 
     public PortfolioProfile Profile { get; private set; } = default!;
 
-    public void OnGet()
+    public async Task OnGetAsync(CancellationToken cancellationToken)
     {
-        Profile = _portfolioService.GetProfile();
+        Profile = await _portfolioService.GetProfileAsync(cancellationToken);
     }
 }
